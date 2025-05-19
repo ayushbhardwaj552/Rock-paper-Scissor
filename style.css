@@ -1,0 +1,118 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  background-color: blue;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s, border 0.3s;
+}
+
+img:hover {
+  border: 10px solid black;
+  transform: scale(1.05);
+}
+
+.score {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+button {
+  display: block;
+  margin: 3% auto 0 auto;
+  width: 220px;
+  height: 40px;
+  font-size: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 3px solid black;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (max-width: 768px) {
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 90px;
+    height: 90px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
